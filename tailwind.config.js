@@ -31,6 +31,8 @@ module.exports = {
         basisMedium: "'BasisProMedium',sans-serif",
         basisRegular: "'BasisProRegular',sans-serif",
         reckless: "'RecklessNeueLight',sans-serif",
+        
+      
       },
     },
   },

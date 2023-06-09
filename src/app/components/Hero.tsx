@@ -5,8 +5,10 @@ import heroImage from "../images/1675095716-heroimage_one-compressed.avif";
 function Hero() {
   return (
     <>
-      <section className="grid max-w-6xl grid-cols-1 gap-10 px-6 py-10
-       mx-auto lg:gap-24 lg:flex lg:flex-row-reverse lg:items-center lg:justify-center">
+      <section
+        className="grid max-w-6xl grid-cols-1 gap-10 px-6 pt-10
+       mx-auto lg:gap-24 lg:flex lg:flex-row-reverse lg:items-center lg:justify-center"
+      >
         <article className="lg:flex-1">
           <h1 className="text-4xl font-reckless lg:text-5xl 2xl:text-6xl">
             Share what you know.™
@@ -42,7 +44,7 @@ function Hero() {
           </form>
         </article>
 
-        <article className="lg:flex-1">
+        <article className="lg:flex-1 -mb-5 lg:-mb-20">
           <Image src={heroImage} alt="share what you know" />
         </article>
       </section>
