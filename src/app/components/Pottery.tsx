@@ -15,8 +15,8 @@ function Pottery() {
             <figure className="relative ">
               <Image
                 src={pottary}
-                width={746}
-                height={558}
+                layout="responsive"
+                sizes="(max-width: 768px) 350px "
                 className="relative mx-auto lg:w-[1145px] h-[867px]"
                 alt="teachable online courses promo video"
               />

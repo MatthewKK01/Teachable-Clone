@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Pottery from "./components/Pottery";
 import Join from "./components/Join";
+import Tabs from "./components/Tabs";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Pottery />
       <Join />
+      <Tabs />
     </>
   );
 }
