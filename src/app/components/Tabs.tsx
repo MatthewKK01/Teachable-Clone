@@ -5,7 +5,13 @@ import React, { useState } from "react";
 import Image from "next/image";
 
 function Tabs() {
-  const data = [
+  interface IData {
+    image: string;
+    quote: string;
+    title: string;
+  }
+
+  const data: IData[] = [
     {
       image: "/images/tab-1.avif",
       quote:
@@ -26,11 +32,11 @@ function Tabs() {
     },
   ];
 
-  const [tabs] = useState(data); // created state for data to map it into document
+  const [tabs] = useState<IData[]>(data); // created state for data to map it into document
 
-  const [value, setValue] = useState(0); // created variable, when clicked on list item value would be equal to tab`s mapped index key.
+  const [value, setValue] = useState<number>(0); // created variable, when clicked on list item value would be equal to tab`s mapped index key.
 
-  const { image, quote, title } = tabs[value]; // desctuctured tabs which is depened on value.
+  const { image, quote, title }: IData = tabs[value]; // desctuctured tabs which is depened on value.
 
   return (
     <div>
